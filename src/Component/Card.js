@@ -7,7 +7,7 @@ export function Card({movie}) {
     const {poster_path, overview, original_title, id} = movie
 
     // eslint-disable-next-line
-    const image = `https://image.tmdb.org/t/p/w500/${poster_path}`
+    const poster = `https://image.tmdb.org/t/p/w500/${poster_path}`
     // console.log(id)
     const Navigate = useNavigate()
     const handleClick =()=>{
@@ -18,7 +18,7 @@ export function Card({movie}) {
   return (
     <div onClick={handleClick} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-3 mb-2">
         <Link to="/">
-            <img className="rounded-t-lg" src={poster_path ? image : images} alt="" />
+            <img className="rounded-t-lg" src={poster_path ? poster : images} alt=" ola " />
         </Link>
         <div className="p-5">
             <Link to="/">
