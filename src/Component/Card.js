@@ -1,7 +1,10 @@
 import React from 'react'
 import images from "../asset/images.png"
 import { Link , useNavigate} from 'react-router-dom'
+<<<<<<< HEAD
 
+=======
+>>>>>>> b9d2bbfdc7bae9c31a5c84bc5fb05031d20efe82
 
 export function Card({movie}) {
     const {poster_path, overview, original_title, id} = movie
