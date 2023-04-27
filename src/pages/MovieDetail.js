@@ -17,7 +17,7 @@ export  function MovieDetail() {
       setMovie(json)
     }
     FetchMovieDetail()
-  },[])
+  },[params.id])
   
   return (
     <main>
