@@ -5,6 +5,8 @@ import { Link , useNavigate} from 'react-router-dom'
 
 export function Card({movie}) {
     const {poster_path, overview, original_title, id} = movie
+
+    // eslint-disable-next-line
     const image = `https://image.tmdb.org/t/p/w500/${poster_path}`
     // console.log(id)
     const Navigate = useNavigate()
