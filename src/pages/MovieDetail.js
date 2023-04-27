@@ -7,8 +7,7 @@ export  function MovieDetail() {
   const [movie, setMovie] =useState({})
   const params = useParams();
 
-  // eslint-disable-next-line
-  const imageOf = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+  
   useTitle(movie.title)
   // console.log(params)
   useEffect(()=>{
@@ -25,9 +24,8 @@ export  function MovieDetail() {
     <main>
       <section className="flex justify-around py-5 flex-wrap">
         <div className="max-w-sm">
-          
-        // eslint-disable-next-line
-          <img src={movie.poster_path ? imageOf : Backup} alt="poster image" />
+        
+          <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="poster image" />
         </div>
         <div className="max-w-2xl text-grey-700 dark:text-white text-lg">
           <h1 className="text-4xl my-3 font-bold text-center lg:text-left">{movie.title}</h1>
