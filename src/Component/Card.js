@@ -1,7 +1,7 @@
 import React from 'react'
 import images from "../asset/images.png"
 import { Link , useNavigate} from 'react-router-dom'
-import { useEffect } from 'react'
+
 
 export function Card({movie}) {
     const {poster_path, overview, original_title, id} = movie
