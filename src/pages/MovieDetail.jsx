@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
-import Backup from "../asset/images.png"
 import { useTitle } from "../hook/useTitle";
 
 export  function MovieDetail() {
@@ -25,7 +24,7 @@ export  function MovieDetail() {
       <section className="flex justify-around py-5 flex-wrap">
         <div className="max-w-sm">
         
-          <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="poster image" />
+          <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt=" posterImage" />
         </div>
         <div className="max-w-2xl text-grey-700 dark:text-white text-lg">
           <h1 className="text-4xl my-3 font-bold text-center lg:text-left">{movie.title}</h1>
